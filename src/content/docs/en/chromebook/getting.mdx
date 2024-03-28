@@ -7,7 +7,16 @@ import Alert from "../../../../components/Docs/Alert.astro";
 
 ## Minimum System Requirements
 
-1GB RAM, 8GB storage, 16MB boot partition (essentially any 2017 or newer ChromeOS device). List of ChromeOS device boot partition sizes can be found [here](https://raw.githubusercontent.com/alpernebbi/depthcharge-tools/master/depthcharge_tools/boards.ini)
+1GB RAM, 8GB storage, 16MB boot partition. Essentially any x86 ChromeOS device, with a few [exceptions](/en/everywhere/chromebook/#unsupported-devices) will work. A list of ChromeOS device boot partition sizes can be found [here](https://raw.githubusercontent.com/alpernebbi/depthcharge-tools/master/depthcharge_tools/boards.ini).
+
+If you don't know if your Chromebook is x86 or not, follow these instructions:
+
+1. Find your CPU model by opening chrome and searching `chrome://system`, then press `expand all`.
+2. Once the expanded view loads, hit <kbd>Ctrl</kbd>+<kbd>F</kbd> and search `cpuinfo`.
+3. In the `cpuinfo` menu, you will see your CPU name in the `model name` row.
+4. In a new tab, type 'is `(your CPU name)` x86?' and it should tell you.
+
+Note this is not the only way to find your CPU, feel free to look online or use another method.
 
 ## Choosing Your Edition
 
@@ -25,9 +34,9 @@ Ultramarine Linux is distributed with image files available for download from [o
   sites other than our website or FOSSTorrents
 </Alert>
 
-## Verifying the Safety of an Ultramarine ISO (Recommended)
+## Verifying the Safety of an Ultramarine Image (Recommended)
 
-Ultramarine ISO images have a matching `CHECKSUM` file that can be checked against the image itself.
+Ultramarine images have a matching `CHECKSUM` file that can be checked against the image itself.
 
 They can be downloaded by clicking the `View Checksum` button on the [download page](https://ultramarine-linux.org/download/chromebook).
 
@@ -64,13 +73,13 @@ CertUtil -hashfile PATH\TO\ULTRAMARINE.ISO SHA256
 
 ## Creating the Installer
 
-### Download [balenaEtcher](https://www.balena.io/etcher/) to create a bootable media from the img image.
+### Download [balenaEtcher](https://www.balena.io/etcher/) to create a bootable media from the image.
 
-![](/assets/balenaetcher.png)
+![](/assets/etcher2.png)
 
 Simply select the img file, a device to use for the installer, and click flash.
 
-#### [Next Up: Installing to a Chromebook →](preparing)
+#### [Next Up: Installing to a Chromebook →](installing)
 
 #### [← Back To: Getting Started](chromebook)
 
