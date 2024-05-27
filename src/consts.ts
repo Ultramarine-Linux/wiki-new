@@ -36,7 +36,19 @@ export const SIDEBAR: Sidebar = {
     Installation: [
       { text: "Getting Ultramarine", link: "en/installation/getting" },
       { text: "Installation", link: "en/installation/installation" },
+      // {
+      // text: "Installation with Readymade",
+      //link: "en/installation/readymade",
+      //},
+      {
+        text: "Installation on Raspberry Pi",
+        link: "en/installation/rpi",
+      },
       { text: "Post-Installation", link: "en/installation/postinstall" },
+      {
+        text: "Advanced Post-Install Steps",
+        link: "en/installation/post-advanced",
+      },
     ],
     Contributing: [
       { text: "Overview", link: "en/contributing/contributorguide" },
@@ -44,7 +56,7 @@ export const SIDEBAR: Sidebar = {
     ],
     Hardware: [
       { text: "System Requirements", link: "en/hardware/requirements" },
-      { text: "Ultramarine Everywhere", link: "en/hardware/everywhere" },
+      { text: "Ultramarine Anywhere", link: "en/hardware/anywhere" },
       { text: "NVIDIA", link: "en/hardware/nvidia" },
       { text: "Microsoft Surface", link: "en/hardware/surface" },
       {
@@ -54,15 +66,19 @@ export const SIDEBAR: Sidebar = {
       { text: "BIOS Keys", link: "en/hardware/bioskeys" },
     ],
     "Linux Concepts": [
-      { text: "Concepts Overview", link: "en/linux/overview" },
+      { text: "What is Linux?", link: "en/linux/overview" },
       { text: "The File System", link: "en/linux/filesystem" },
       { text: "Device Files", link: "en/linux/devicefiles" },
       { text: "Permissions", link: "en/linux/permissions" },
       { text: "Software and Package Management", link: "en/linux/software" },
       { text: "The Shell", link: "en/linux/shell" },
+      { text: "Security and Privacy", link: "en/linux/securityprivacy" },
     ],
 
-    Usage: [{ text: "Gaming on Ultramarine", link: "en/usage/gaming" }],
+    Usage: [
+      { text: "Gaming on Ultramarine", link: "en/usage/gaming" },
+      { text: "Localization", link: "en/usage/l10n" },
+    ],
 
     "Release Notes": [{ text: "Errata", link: "en/release/errata" }],
     Chromebook: [
